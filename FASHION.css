@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+}
+*{
+    scroll-behavior: smooth;
+}
+nav{ 
+   
+    display: flex;
+    height: 3vmax;
+    box-shadow: 0 0 20px black;
+    position: sticky;
+    top: 0%;
+    background-color: rgb(218, 194, 164);
+    z-index: 10000;
+}
+.left{
+    
+    width: 20vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left > a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vmax;
+    color: rgb(133, 111, 82);
+    text-shadow: 3px 3px 3px rgb(110, 126, 157);
+}
+.mid{
+   
+    width: 60vmax;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.mid>a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: black;
+    font-size: 1.4vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mid>a:hover{
+    color: rgb(161, 119, 182);
+}
+.right{
+   
+    width: 20vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right>img{
+    width: 3vmax;
+}
+/*sectionnnnnn*/
+
+.home{
+    display: flex;
+    height: 90vh;
+    background-image: radial-gradient(
+    rgb(242, 245, 238),
+    rgba(216, 158, 210, 0.723));
+}
+.container{
+    margin-left: 6%;
+    width: 100%;
+}
+#rightcontainer{
+    display: flex;
+    justify-content: flex-end;
+}
+#rightcontainer>img{
+    margin-right: 7vmax;
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+}
+#leftcontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 3vmax;
+    box-sizing: border-box;
+    
+}
+#leftcontainer>h1{
+    margin-top: 20%;
+    font-size: 5vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(133, 111, 82);
+    
+    
+}
+#leftcontainer>h2{
+    
+    font-size: 2vmax;
+    margin-top: -8%;
+    color:rgba(45, 26, 62, 0.671);
+    font-family: 'Times New Roman', Times, serif;
+}
+#leftcontainer>p{
+    margin-top: 10%;
+    width: 500px;
+    margin-left: 1%;
+    font-size: 1vmax;
+    color: rgba(45, 10, 61, 0.645);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#leftcontainer>button{
+    width: 9vmax;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: rgb(187, 140, 106);
+    color: darkslategrey;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#leftcontainer>button:hover{
+    background-color: rgba(99, 92, 144, 0.716);
+    color: white;
+}
+
+
+/*-------------------------------------------------------------------------*/
+
+#products>h3{
+    text-align: center;
+    margin: 40px auto;
+    font-size: 2vmax;
+    border-bottom: 4px solid rgba(184, 140, 83, 0.734);
+    width: 25vmax;
+    padding: 1%;
+}
+.productscontainer{
+    
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}  
+/*...... product 1..................*/
+.product{
+   
+    transition: all 0.4s;
+    cursor: pointer;
+    height: 26vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1vmax;
+}
+.product>img{
+    width: 17vmax;
+}
+.product>h4{
+    margin: 2%;
+}
+.product>h5{
+    margin: 0%;
+}
+.product:hover{
+    transform: translateY(-10px);   
+}
+/*........................*/
+
+footer{
+    margin-top: 10vmax;
+    padding: 2vmax;
+    background-color: rgb(36, 33, 33);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+.leftfooter{
+    width: 20%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.leftfooter>img{
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+.leftfooter>p{
+    margin-top: -8%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.leftfooter>h6{
+    margin-top: 0%;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.midfooter{
+    width: 60%;
+    text-align: center;
+}
+.midfooter>h1{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vmax;
+    color: rgb(133, 111, 82);
+    text-shadow: 3px 3px 3px rgb(1, 0, 0);
+}
+.midfooter>p{
+    max-width: 40%;
+    margin:1vmax auto;
+    font-size: 0.9vmax;
+}
+.rightfooter{
+    width: 20%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rightfooter>h1{
+    font-size: large;
+    text-decoration: underline;
+}
+.rightfooter>a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0.5vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    margin-top: 6%;
+}
